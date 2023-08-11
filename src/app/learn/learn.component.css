@@ -1,0 +1,26 @@
+.learn-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .questions-list {
+    margin-top: 20px;
+  }
+  
+  .questions-list a {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .individual-question {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

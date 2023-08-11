@@ -1,0 +1,14 @@
+<div class="question-list-container">
+    <h1 class="title">Question List</h1>
+    <ul class="question-list">
+      <li *ngFor="let question of questions; let i = index">
+        <div class="question" (click)="toggleAnswer(i)">
+          {{ question.question }}
+        </div>
+        <div class="answer" *ngIf="showAnswer[i]">
+          {{ question.answer }}
+        </div>
+      </li>
+    </ul>
+  </div>
+  

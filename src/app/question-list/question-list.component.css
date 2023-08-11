@@ -1,0 +1,38 @@
+.question-list-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .question-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .question-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .question-text {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .answer-text {
+    margin: 0;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  .home-button {
+    margin-bottom: 20px;
+  }
+  

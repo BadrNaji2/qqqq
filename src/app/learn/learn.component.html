@@ -1,0 +1,24 @@
+<div class="learn-container">
+    <h1 class="title">Learn Mode</h1>
+    <div class="buttons">
+      <button (click)="toggleQuestionList()">Question List</button>
+      <button (click)="toggleIndividualQuestion()">Individual Question</button>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  
+  <div *ngIf="showQuestionList">
+    <div class="question-list-container">
+      <h1 class="title">Question List</h1>
+      <ul class="question-list">
+        <li *ngFor="let question of questions">
+          <a [routerLink]="['/learn/individual', question.id]">{{ question.question }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div *ngIf="showIndividualQuestion">
+  
+  </div>
+  

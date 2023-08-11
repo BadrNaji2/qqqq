@@ -1,0 +1,45 @@
+[
+    
+      {
+        "question": "Which command is used to set the hostname of the local system? (Specify only the command without any path or parameters.)",
+        "answer": "hostname"
+      },
+      {
+        "question": "Which of the following is a valid IPv6 address?\nA. 2001:db8:0g21::1\nB. 2001::db8:4581::1\nC. 2001:db8:3241::1\nD. 2001%db8%9990%%1\nE. 2001.db8.819f..1",
+        "answer": "C"
+      },
+      {
+        "question": "What command, depending on its options, can display the open TCP connections, the routing tables, as well as network interface statistics? (Specify only the command without any path or parameters.)",
+        "answer": "netstat"
+      },
+      {
+        "question": "Which command included in NetworkManager is a curses application which provides easy access to the NetworkManager on the command line? (Specify only the command without any path or parameters.)",
+        "answer": "nmtui"
+      },
+      {
+        "question": "Which of the following tools, used for DNS debugging, reports not only the response from the name server but also details about the query?\nA. dnsq\nB. hostname\nC. dig\nD. dnslookup\nE. zoneinfo",
+        "answer": "C"
+      },
+      {
+        "question": "Which of the following statements is valid in the file /etc/nsswitch.conf?\nA. multi on\nB. 192.168.168.4 dns-server\nC. namespaces: net mount procs\nD. include /etc/nsswitch.d/\nE. hosts: files dns",
+        "answer": "E"
+      },
+      {
+        "question": "Which of the following connection types, as seen in nmcli connection show, may exist in NetworkManager? (Choose three.)\nA. tcp\nB. ethernet\nC. wifi\nD. ipv6\nE. bridge",
+        "answer": "BCE"
+      },
+      {
+        "question": "On a Linux workstation, the route command takes a long time before printing out the routing table. Which of the following errors does that indicate?\nA. The local routing information may be corrupted and must be re-validated using a routing protocol.\nB. One of the routers in the routing table is not available which causes the automatic router failure detection mechanism (ARF-D) to wait for a timeout.\nC. There may accidentally be more than one default router in which case a default router election has to be done on the network in order to choose one router as the default.\nD. The Linux Kernel Routing Daemon (LKRD) is not running and should be started using its init script or systemd unit.\nE. DNS resolution may not be working as route by default tries to resolve names of routers and destinations and may run into a timeout.",
+        "answer": "E"
+      },
+      {
+        "question": "What is true about the Hop Limit field in the IPv6 header?\nA. The field is not changed during the transport of a package.\nB. The field is transmitted within a hop-by-hop extension header.\nC. Each router forwarding the packet increases the field's value.\nD. Each router forwarding the packet decreases the field's value.\nE. For multicast packages, the field's value is always 1.",
+        "answer": "D"
+      },
+      {
+        "question": "Which of the following nmcli subcommands exist? (Choose two.)\nA. nmcli ethernet\nB. nmcli device\nC. nmcli wifi\nD. nmcli address\nE. nmcli connection",
+        "answer": "BE"
+      }
+    ]
+  
+  
