@@ -28,6 +28,7 @@ export class QuestionListComponent {
       }
     );
   }
+  
 
   toggleAnswer(index: number): void {
     this.showAnswer[index] = !this.showAnswer[index];

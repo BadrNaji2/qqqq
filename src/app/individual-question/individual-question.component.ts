@@ -8,6 +8,12 @@ import { QuestionsService } from '../questions.service';
   styleUrls: ['./individual-question.component.css']
 })
 export class IndividualQuestionComponent implements OnInit {
+toggleIndividualQuestion() {
+throw new Error('Method not implemented.');
+}
+toggleQuestionList() {
+throw new Error('Method not implemented.');
+}
   question: any = null;
 
   constructor(

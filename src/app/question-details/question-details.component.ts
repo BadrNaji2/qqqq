@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./question-details.component.css']
 })
 export class QuestionDetailsComponent {
+showQuestionList: any;
+questions: any;
 
 }
