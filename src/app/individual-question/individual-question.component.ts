@@ -8,12 +8,7 @@ import { QuestionsService } from '../questions.service';
   styleUrls: ['./individual-question.component.css']
 })
 export class IndividualQuestionComponent implements OnInit {
-toggleIndividualQuestion() {
-throw new Error('Method not implemented.');
-}
-toggleQuestionList() {
-throw new Error('Method not implemented.');
-}
+  showAnswer: boolean = false; // Start with answer hidden
   question: any = null;
 
   constructor(
@@ -22,9 +17,9 @@ throw new Error('Method not implemented.');
   ) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      const questionId = Number(params.get('id'));
-      this.loadQuestion(questionId);
+    this.route.paramMap.subscribe((params) => {
+      const id = Number(params.get('id'));
+      this.loadQuestion(id);
     });
   }
 
@@ -37,5 +32,9 @@ throw new Error('Method not implemented.');
         console.error('Fehler beim Laden der Frage:', error);
       }
     );
+  }
+
+  toggleAnswer(): void {
+    this.showAnswer = !this.showAnswer;
   }
 }

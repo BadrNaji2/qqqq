@@ -1,9 +1,16 @@
 <div class="question-list-container">
-    <h1 class="title">Question List</h1>
-    <ul class="question-list">
-      <li *ngFor="let question of questions">
-        <a [routerLink]="['/learn/individual', question.id]">{{ question.question }}</a>
-      </li>
-    </ul>
-  </div>
-  
+  <h1 class="title">Question List</h1>
+  <ul class="question-list">
+    <li *ngFor="let question of questions; let i = index">
+      <div class="question">
+        {{ question.question }}
+      </div>
+      <div class="answer" *ngIf="showAnswer[i]">
+        Answer: {{ question.answer }}
+      </div>
+      <button (click)="toggleAnswer(i)" class="show-answer-button">
+        {{ showAnswer[i] ? 'Hide Answer' : 'Show Answer' }}
+      </button>
+    </li>
+  </ul>
+</div>

@@ -9,11 +9,12 @@ import { IndividualQuestionComponent } from './individual-question/individual-qu
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'learn', component: LearnComponent },
+  { path: 'learn', component: LearnComponent, children: [
+    { path: 'list', component: QuestionListComponent },
+    { path: 'individual/:id', component: IndividualQuestionComponent }
+  ] },
   { path: 'check', component: CheckComponent },
-  { path: 'exam', component: ExamComponent },
-  { path: 'learn/list', component: QuestionListComponent },
-  { path: 'learn/individual/:id', component: IndividualQuestionComponent },
+  { path: 'exam', component: ExamComponent }
 ];
 
 @NgModule({
@@ -21,3 +22,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+

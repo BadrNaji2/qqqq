@@ -1,5 +1,6 @@
-<div class="buttons">
-    <button (click)="toggleIndividualQuestion()">Individual Question</button>
-    <button (click)="toggleQuestionList()">Question List</button>
-  </div>
-  
+<div class="learn-buttons">
+  <button routerLink="/learn/list">Question List</button>
+  <button routerLink="/learn/individual/1">Individual Question</button>
+</div>
+
+<router-outlet></router-outlet>

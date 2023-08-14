@@ -21,7 +21,6 @@ export class QuestionListComponent {
     this.questionsService.getQuestions().subscribe(
       (questions) => {
         this.questions = questions;
-        this.showAnswer = new Array(questions.length).fill(false);
       },
       (error) => {
         console.error('Fehler beim Laden der Fragen:', error);

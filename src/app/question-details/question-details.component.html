@@ -1,11 +1,8 @@
-<div *ngIf="showQuestionList">
-    <div class="question-list-container">
-      <h1 class="title">Question List</h1>
-      <ul class="question-list">
-        <li *ngFor="let question of questions">
-          <a [routerLink]="['/learn/individual', question.id]">{{ question.question }}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
+<div class="question-list-container">
+  <h1 class="title">Question List</h1>
+  <ul class="question-list">
+    <li *ngFor="let question of questions">
+      <a [routerLink]="['/learn/individual', question.id]">{{ question.question }}</a>
+    </li>
+  </ul>
+</div>

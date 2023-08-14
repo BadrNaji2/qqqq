@@ -1,5 +1,11 @@
 <div class="individual-question-container">
-    <h2 class="question">{{ question?.question }}</h2>
-    <p class="answer">{{ question?.answer }}</p>
+  <div class="question">
+    {{ question.question }}
   </div>
-  
+  <div class="answer" *ngIf="showAnswer">
+    Answer: {{ question.answer }}
+  </div>
+  <button (click)="toggleAnswer()" class="show-answer-button">
+    {{ showAnswer ? 'Hide Answer' : 'Show Answer' }}
+  </button>
+</div>
