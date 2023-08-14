@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'learn', component: LearnComponent, children: [
     { path: 'list', component: QuestionListComponent },
-    { path: 'individual/:id', component: IndividualQuestionComponent }
+    { path: 'learn/individual/:id', component: IndividualQuestionComponent },
   ] },
   { path: 'check', component: CheckComponent },
   { path: 'exam', component: ExamComponent }

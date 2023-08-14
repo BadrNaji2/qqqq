@@ -22,7 +22,7 @@ export class IndividualQuestionComponent implements OnInit {
       this.loadQuestion(id);
     });
   }
-
+  
   loadQuestion(id: number): void {
     this.questionsService.getQuestionById(id).subscribe(
       (question) => {
@@ -33,7 +33,7 @@ export class IndividualQuestionComponent implements OnInit {
       }
     );
   }
-
+  
   toggleAnswer(): void {
     this.showAnswer = !this.showAnswer;
   }
